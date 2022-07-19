@@ -1,0 +1,156 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10vh 10vw;
+    width: 50vw;
+}
+
+form input {
+    font-size: 1.1rem;
+    padding: 5px;
+    width: 20vw;
+}
+
+form textarea {
+    width: 40vw;
+    max-width: 40vw;
+    min-height: 20vh;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    padding: .5rem;
+}
+
+.contact--btn-sub {
+    font-family: var(--primary-text);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+.top-text {
+    text-align: center;
+    margin: 50px;
+    font-family: var(--primary-text);
+}
+
+.contact--top-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.hours-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hours-info p{
+    margin-bottom: 15px;
+}
+
+.hours-info ul {
+    display: flex;
+    gap: 25px;
+    align-self: center;
+}
+
+.hours-info li {
+    list-style-type: none;
+    
+}
+
+
+.form--boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form--boxes ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form--boxes li{
+    list-style-type: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+    form {
+        margin: 10vh auto;
+        width: 70vw;
+    }
+
+    form input {
+        width: 50vw;
+    }
+
+    form textarea {
+        min-width: 80vw;
+        font-size: .8rem;
+    }
+
+    .form--boxes {
+        flex-wrap: wrap;
+    }
+
+    .form--boxes ul{
+        margin: 20px;
+    }
+
+    .contact--top-text {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 810px) {
+    
+        .form--boxes {
+            flex-wrap: wrap;
+        }
+    form {
+        margin: 10vh auto;
+        width: 70vw;
+    }
+
+    form input {
+        width: 50vw;
+    }
+
+    form textarea {
+        min-width: 60vw;
+        font-size: .8rem;
+    }
+
+    .form--boxes ul{
+        margin: 20px;
+    }
+
+    .contact--top-text {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        align-items: center;
+    }
+}

@@ -1,0 +1,112 @@
+
+nav {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:linear-gradient(to bottom, rgba(168, 202, 36, .3) 0%, rgba(252, 252, 252, .3) 100%);
+    z-index: 3;
+    width: 100%;
+}
+
+
+
+/* CLASSES--------------------------------------------------------------------------------------------------- */
+.nav--menu ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav--menu li {
+    list-style-type: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 300ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.nav--menu li:hover {
+    opacity: .7;
+    transition: all 200ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.nav--logo {
+    width: 200px;
+    transition: all 300ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.nav--logo:hover {
+    opacity: .7;
+    transition: all 200ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.nav--hamburger {
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.nav--hamburger-menu ul{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1.1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    transform: translate(-50%, 0%);
+    -webkit-animation: slide-top 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950) reverse both;
+	        animation: slide-top 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950) reverse both;
+}
+
+.nav--hamburger-menu ul li {
+    list-style-type: none;
+    padding: 20px;
+    width: 200px;
+    font-size: 1.3rem;
+}
+/* ANIMATIONS ---------------------------------------------------------------------------------------------------*/
+
+.slide-top {
+	-webkit-animation: slide-top 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950) reverse both;
+	        animation: slide-top 500ms cubic-bezier(0.445, 0.050, 0.550, 0.950) reverse both;
+}
+
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 5%);
+              transform: translate(-50%, 5%);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 5%);
+              transform: translate(-50%, 5%);
+    }
+  }
+  
+  
+
+/* LINKS ---------------------------------------------------------------------------------------------------*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
