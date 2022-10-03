@@ -1,14 +1,14 @@
 import React from 'react'
-import Nav from './components/nav/nav'
-import ServiceBlocks from './components/service blocks/serviceBlocks'
-import Footer from './components/footer/footer'
-import { Outlet, Link } from 'react-router-dom'
+import Nav from './components/nav/Nav'
 import './style.css'
+import ServiceBlocks from './components/service blocks/ServiceBlocks'
+import Footer from './components/footer/Footer'
+import { Outlet, Link } from 'react-router-dom'
 import { GiHighGrass, GiGardeningShears, GiWaterDrop } from 'react-icons/gi'
 import { TbShovel } from 'react-icons/tb'
 import { Helmet } from 'react-helmet'
 
-const app = () => {
+const App = () => {
   return (
     <div>
 
@@ -104,4 +104,4 @@ const app = () => {
   )
 }
 
-export default app
+export default App

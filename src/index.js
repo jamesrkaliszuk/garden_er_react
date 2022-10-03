@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './app'
+import App from './App'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Services from './pages/services/services'
-import Contact from './pages/contact/contact'
+import Services from './pages/services/Services'
+import Contact from './pages/contact/Contact'
 
 const container = document.getElementById('root')
 
@@ -14,8 +14,8 @@ root.render(
 <BrowserRouter>
     <Routes>
         <Route path='/' element={<App />} />
-        <Route path='services' element={<Services />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='Services' element={<Services />} />
+        <Route path='Contact' element={<Contact />} />
     </Routes>
 </BrowserRouter>
 )

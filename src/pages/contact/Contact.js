@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Nav from './../../components/nav/nav'
+import Nav from '../../components/nav/Nav'
 import { Helmet } from 'react-helmet'
 import './contact.css'
-import Footer from '../../components/footer/footer'
+import Footer from '../../components/footer/Footer'
 
 const Contact = () => {
 

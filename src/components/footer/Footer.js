@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import ToTop from '../toTopBtn/toTop'
+import ToTop from '../toTopBtn/ToTop'
 import { CgCopyright } from 'react-icons/cg'
 
 const Footer = () => {
